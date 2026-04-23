@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+
+.backgroundColor {
+  background: linear-gradient(#0c0e10, #446182);
+}
+
+.fontFamily {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.white {
+  color: #f5f6fa;
+}
+
+.black {
+  background: #0c0e10;
+}
+
+.gray {
+  background: #202425;
+}
+
+.blue {
+  background: #446182;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.ground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 25vh;
+  background: #0c0e10;
+}
+
+.container {
+  display: flex;
+  width: 85%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25vh;
+}
+
+/* Left Section */
+.leftSection {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.heading {
+  font-size: 9em;
+  margin: 0;
+  text-shadow: 0 0 1rem #f5f6fa;
+}
+
+.subheading {
+  font-size: 1.5em;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Right Section */
+.rightSection {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 770px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .leftSection {
+    width: 100%;
+    height: 40%;
+  }
+
+  .rightSection {
+    width: 100%;
+    height: 60%;
+  }
+
+  .heading {
+    font-size: 7em;
+  }
+
+  .subheading {
+    font-size: 1.3em;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.image {
+  width: 1150px; /* Chỉnh kích thước nhỏ lại */
+  height: auto;
+  max-width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}

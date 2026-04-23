@@ -1,0 +1,100 @@
+.order-summary {
+  width: 100%; /* Chiếm toàn bộ chiều rộng của checkout-right */
+  box-shadow: none; /* Xóa đổ bóng */
+  border-radius: 0; /* Xóa bo góc nếu có */
+  padding: 15px; /* Điều chỉnh padding nếu cần */
+}
+
+.order-summary__list {
+  max-height: 680px; /* Giới hạn chiều cao và tạo thanh cuộn */
+  overflow-y: auto;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.order-summary__item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.order-summary__image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.order-summary__details {
+  flex-grow: 1;
+}
+
+.order-summary__title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+.order-summary__quantity {
+  font-size: 12px;
+  color: #666;
+}
+
+.order-summary__subtotal {
+  font-size: 14px;
+  font-weight: bold;
+  color: #222;
+}
+
+.order-summary__discount {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.order-summary__discount input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.order-summary__discount button {
+  padding: 8px 12px;
+  background: #f08441;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-summary__total {
+  font-size: 14px;
+  color: #333;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.order-summary__total p {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.order-summary__final {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.order-summary__empty {
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+
+.order-summary__meta {
+  font-size: 12px;
+  color: #555;
+  margin-top: 2px;
+}

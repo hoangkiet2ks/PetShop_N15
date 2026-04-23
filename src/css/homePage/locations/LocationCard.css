@@ -1,0 +1,23 @@
+/* .block-location {
+    display: flex;
+    justify-content: space-around;
+} */
+
+.block-location .card {
+    width: 100%;
+    border: none !important;
+    text-align: center;
+}
+
+.block-location .card-body a {
+    background: #0849ff;
+    font-weight: 700;
+    padding: 13px 52px;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.block-location .card-body h5 {
+    font-weight: 700;
+}

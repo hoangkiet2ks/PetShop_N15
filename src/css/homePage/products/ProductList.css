@@ -1,0 +1,25 @@
+.block-info-product {
+    display: grid;
+    gap: 20px;
+    /* Cố gắng nhét vô một hàng nhiều nhất có thể trong 1 màn hình, tối thiểu mỗi cái 220px */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.block-header-content {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title .text {
+    color: #3c3c3c;
+    font-weight: 700;
+    margin-bottom: 30px !important;
+    font-size: 20px;
+}
+
+.view_all {
+    color: #3c3c3c;
+    font-weight: 400;
+    margin-bottom: 30px !important;
+}

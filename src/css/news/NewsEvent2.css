@@ -1,0 +1,87 @@
+.snow-container {
+    position: fixed;  /* Giúp tuyết luôn xuất hiện trên màn hình */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 9999; /* Đảm bảo tuyết rơi trên cùng */
+  }
+  
+  .snowflake {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: snowfall linear infinite;
+  }
+  
+  @keyframes snowfall {
+    0% {
+      transform: translateY(-5vh);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  
+  /* Trang trí Noel */
+  .christmas-decorations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .tree {
+    width: 150px;
+    margin-right: 20px;
+  }
+  
+  .santa {
+    width: 120px;
+    margin-right: 20px;
+    animation: santa-move 2s infinite alternate;
+  }
+  
+  .reindeer {
+    width: 130px;
+    animation: reindeer-bounce 1.5s infinite alternate;
+  }
+  
+  /* Hiệu ứng động */
+  @keyframes santa-move {
+    0% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(10px);
+    }
+  }
+  
+  @keyframes reindeer-bounce {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+
+  .background-container {
+    background-color: rgb(249, 196, 158);
+}
+.snowflake-container {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  pointer-events: none;
+  z-index: 2;
+}
+

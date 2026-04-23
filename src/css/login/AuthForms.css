@@ -1,0 +1,108 @@
+/* AuthForms.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.auth-container {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.auth-form-wrapper {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+  margin: 20px;
+}
+
+.auth-image {
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.auth-image:hover {
+  transform: scale(1.05);
+}
+
+.auth-form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-form h3 {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.form-control {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.2);
+  outline: none;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.text-primary {
+  color: #007bff !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.text-primary:hover {
+  color: #0056b3 !important;
+}
+
+.text-muted {
+  color: #6c757d !important;
+  font-size: 0.9rem;
+}
+
+.text-muted:hover {
+  color: #5a6268 !important;
+}
+
+.auth-links {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.form-control {
+  padding-right: 40px; /* Đảm bảo input có chỗ cho icon */
+}

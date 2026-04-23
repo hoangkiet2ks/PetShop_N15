@@ -1,0 +1,36 @@
+.annoucement-bar {
+    background-color: #ffd700;
+    padding: 10px;
+}
+
+.annoucement-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.annoucement-bar-container .annoucement {
+    margin: 0;
+    text-align: center;
+}
+
+.annoucement-bar-container .annoucement span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.register-click {
+    background: #234bbb;
+    color: #fff;
+    padding: 4px 20px;
+    border-radius: 30px;
+    margin-left: 8px;
+    font-weight: 700;
+}
+
+.register-click a {
+    color: #fff;
+    /* Màu chữ trắng */
+    text-decoration: none;
+    /* Loại bỏ decoration */
+}

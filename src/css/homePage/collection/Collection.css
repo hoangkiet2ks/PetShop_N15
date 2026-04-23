@@ -1,0 +1,29 @@
+.title-collection h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #234bbb;
+    text-align: center;
+}
+
+.block-collection {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* 6 cột bằng nhau */
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .block-collection {
+        grid-template-columns: repeat(2, 1fr);
+        /* Tablet chia 2 cột */
+    }
+}
+
+@media (max-width: 480px) {
+    .block-collection {
+        grid-template-columns: 1fr;
+        /* Mobile 1 cột */
+    }
+}

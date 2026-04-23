@@ -1,0 +1,239 @@
+.header-top {
+  padding: 18px 0px;
+  display: flex;
+  background: #234bbb;
+}
+
+.header-top-container {
+  margin: 0px auto;
+}
+
+.header-top-container-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.image-logo {
+  margin-right: 135px;
+}
+
+.search-box {
+  align-items: center;
+  display: flex;
+  position: relative;
+  width: 550px;
+  border-radius: 5px;
+  border-width: 0px;
+}
+
+.input-header-top {
+  width: 550px;
+  padding: 12px;
+  font-size: 19px;
+  border-radius: 6px;
+  border-width: 0px;
+}
+
+.button-search {
+  right: 0;
+  background-color: transparent;
+  position: absolute;
+  border-style: none;
+  border-radius: 0px;
+  font-size: 21px;
+  padding: 13px;
+  text-align: center;
+  color: #234bbb;
+}
+
+.hotline {
+  text-align: center;
+  margin-left: 30px;
+  color: #fff;
+  font-size: 19px;
+}
+
+.icon-header-top {
+  display: flex;
+  margin-left: 30px;
+}
+
+.icon-header-top-item {
+  position: relative;
+  text-align: center;
+  margin-left: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 19px;
+}
+
+.cart-count-bubble {
+  display: flex;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #f7c947;
+  position: absolute;
+  text-align: center;
+  right: -4px;
+  top: -7px;
+}
+
+.cart-count-bubble .quantity {
+  color: #234bbb;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Khung kết quả tìm kiếm */
+.search-results {
+  width: 550px;
+  padding: 25px;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 sản phẩm trên 1 hàng */
+  gap: 10px;
+  /* Khoảng cách giữa các sản phẩm */
+}
+
+
+
+.product-item-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-item-btn,
+.product-item-btn:hover,
+.product-item-btn:focus,
+.product-item-btn:active {
+  text-decoration: underline;
+  text-decoration-color: #fff !important;
+  color: inherit;
+}
+
+.product-item-btn * {
+  text-decoration: underline;
+  text-decoration-color: #fff !important;
+  color: inherit;
+}
+
+.product-item-btn:hover .product-item {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-color: #ccc;
+}
+
+.product-item {
+  height: 250px;
+  width: 150px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  text-decoration: none;
+}
+
+.product-item h3 {
+  font-size: 12px;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.2s;
+}
+
+.product-item-btn:hover .product-image {
+  opacity: 0.9;
+}
+
+.product-details {
+  padding: 10px;
+  text-align: center;
+}
+
+.product-brand {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.product-name {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: color 0.2s;
+  text-decoration: underline;
+  text-decoration-color: #fff !important;
+}
+
+.product-name:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff !important;
+  color: #e91e63 !important;
+}
+
+.product-prices {
+  margin: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 12px;
+}
+
+.discounted-price {
+  color: #e91e63;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.favorite-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #e91e63;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.favorite-btn:hover {
+  color: #c2185b;
+  transform: scale(1.2);
+}

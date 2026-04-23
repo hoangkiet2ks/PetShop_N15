@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.background-container {
+  background-color: rgb(249, 196, 158);
+  text-align: center;
+  
+}
+/* Hiệu ứng bóng bay 🎈 */
+.balloons {
+  position: fixed;
+  bottom: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  text-align: center;
+}
+
+.balloon {
+  width: 330px;  
+  height: 400px; 
+  background-color: rgba(255, 0, 0, 0.7);
+  border-radius: 50%;
+  position: absolute;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* Màu sắc ngẫu nhiên cho bóng bay */
+.balloon:nth-child(1) { left: 10%; background-color: #ff4d4d; animation-duration: 5s; }
+.balloon:nth-child(2) { left: 20%; background-color: #ffbb33; animation-duration: 6s; }
+.balloon:nth-child(3) { left: 30%; background-color: #ff66b2; animation-duration: 7s; }
+.balloon:nth-child(4) { left: 40%; background-color: #33cc33; animation-duration: 6.5s; }
+.balloon:nth-child(5) { left: 50%; background-color: #3399ff; animation-duration: 5.5s; }
+.balloon:nth-child(6) { left: 60%; background-color: #ff5050; animation-duration: 6s; }
+.balloon:nth-child(7) { left: 70%; background-color: #9900cc; animation-duration: 5.8s; }
+
+
+.news-event-list {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1400px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  font-size: 20px;
+  
+}
+
+.news-event-list:hover {
+  transform: translateY(-5px);
+}
+
+/* Nút CTA */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #e65c00;
+}

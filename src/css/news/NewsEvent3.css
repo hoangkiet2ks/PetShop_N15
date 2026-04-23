@@ -1,0 +1,109 @@
+
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #ff6600;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Card UI */
+.news-event-list {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1400px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    font-size: 20px;
+  }
+  
+  .news-event-list:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Nút CTA */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #e65c00;
+  }
+  
+
+/* Nút tham gia */
+.button {
+    display: inline-block;
+    background: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #e65c00;
+}
+
+/* Hiệu ứng cho trò chơi ném bóng */
+.game-rules {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border-left: 5px solid #ff6600;
+}
+
+/* Hiệu ứng làm nổi bật danh sách quà tặng */
+.bg-yellow-100 {
+    background-color: #fff8dc;
+}
+
+.border-yellow-400 {
+    border-color: #ffcc00;
+}
+
+.text-red-500 {
+    color: #e60000;
+}
+
+.text-blue-500 {
+    color: #007bff;
+}
+
+.text-green-500 {
+    color: #28a745;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+/* Hiệu ứng sticker động */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.emoji {
+    display: inline-block;
+    animation: bounce 1.5s infinite;
+}
+
+.background-container {
+    background-color: rgb(249, 196, 158);
+}

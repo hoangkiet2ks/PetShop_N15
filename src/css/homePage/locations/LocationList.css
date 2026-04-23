@@ -1,0 +1,6 @@
+.block-location {
+    display: grid;
+    gap: 20px;
+    /* Cố gắng nhét vô một hàng nhiều nhất có thể trong 1 màn hình, tối thiểu mỗi cái 220px */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}

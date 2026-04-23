@@ -1,0 +1,125 @@
+/* Overlay mờ nền */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    /* Tăng giá trị z-index để overlay nằm trên header fixed */
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Giỏ hàng */
+.preview-cart {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 500px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.preview-cart.active {
+    right: 0;
+}
+
+/* Header */
+.preview-cart-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Close button */
+.close_btn {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Body */
+.preview-cart-body {
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-grow: 1;
+}
+
+.empty-cart-text {
+    font-size: 18px;
+    text-align: center;
+    top: 50%;
+    position: relative;
+}
+
+/* Footer */
+.preview-cart-footer {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.preview-cart-footer .total-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview-cart-footer p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.preview-cart-footer .price-text {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Buttons */
+.preview-cart-button-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.preview-cart-footer .preview-cart-button {
+    text-align: center;
+    width: 100%;
+    max-width: 440px;
+    height: 55px;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 13px;
+    border-radius: 30px;
+    border: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.preview-cart-footer .preview-cart-button:hover {
+    background: rgb(240, 132, 65);
+    color: #fff;
+    border: none;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,75 @@
+.filter-collection {
+    display: flex;
+    flex-wrap: wrap;
+    /* Cho phép xuống hàng nếu cần */
+    margin: 0 -10px;
+    /* Để tạo khoảng cách giữa các sản phẩm */
+}
+
+.title-filter {
+    text-align: center;
+    /* Căn giữa tiêu đề */
+    margin: 10px;
+    /* Khoảng cách giữa tiêu đề và thanh phân cách */
+}
+
+.title-filter {
+    font-size: 26px;
+    color: #111;
+    font-weight: 600;
+}
+
+.divider {
+    height: 2px;
+    /* Chiều cao của thanh ngang */
+    background-color: #ebebeb;
+    /* Màu sắc của thanh */
+    margin: 20px 0;
+    /* Khoảng cách trên và dưới thanh */
+}
+
+.toolbar {
+    display: flex;
+    /* Sử dụng flexbox để sắp xếp các phần tử */
+    justify-content: flex-end;
+    /* Đẩy sang bên phải container */
+    margin-bottom: 20px;
+    /* Khoảng cách dưới thanh công cụ */
+}
+
+.toolbar .form-select {
+    margin-left: 10px;
+    /* Khoảng cách giữa các select */
+}
+
+.productList-filter-collection {
+    list-style: none;
+    /* Xóa dấu bullet trong danh sách */
+    padding: 0;
+    /* Xóa padding mặc định */
+    margin: 0;
+    /* Xóa margin mặc định */
+    display: flex;
+    /* Sử dụng flexbox cho danh sách sản phẩm */
+    flex-wrap: wrap;
+    /* Cho phép các sản phẩm xuống hàng */
+}
+
+.productItem-filter-collection {
+    flex: 0 0 23%;
+    /* Chiếm khoảng 23% chiều rộng, có thể điều chỉnh sao cho 4 sản phẩm trên 1 hàng */
+    max-width: 23%;
+    /* Giới hạn độ rộng tối đa */
+    margin: 0 10px 20px;
+    /* Khoảng cách bên trái và bên phải */
+    box-sizing: border-box;
+    /* Tính toán padding và border vào kích thước sản phẩm */
+}
+
+/* Thay đổi chiều cao và chiều rộng của sản phẩm */
+.productItem-filter-collection img {
+    width: 100%;
+    /* Đảm bảo hình ảnh lấp đầy sản phẩm */
+    height: auto;
+    /* Giữ tỷ lệ khung hình */
+}

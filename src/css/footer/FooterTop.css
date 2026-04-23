@@ -1,0 +1,107 @@
+.footer-top-content {
+    background: #f5f5f5;
+    ;
+    padding-bottom: 60px;
+}
+
+.footer-top-content-dangkyTV {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 45px;
+    padding-bottom: 0px;
+}
+
+.footer-top-content-dangkyTV .footer-block-heading {
+    max-width: 640px;
+    color: #051c42;
+    margin: 0 auto;
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.footer-top-content-dangkyTV .footer-block-subheading {
+    max-width: 640px;
+    margin: 0 auto;
+    color: #051c42;
+}
+
+.footer-top-content-dangkyTV .form-dangkyEmail {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.footer-top-content-dangkyTV .form-dangkyEmail input {
+    border-radius: 6px;
+    border: 1px solid #b4b4b4;
+    width: 475px;
+    height: 49px;
+    padding-left: 10px;
+}
+
+.footer-top-content-dangkyTV .form-dangkyEmail .button-dangkyTV {
+    background-color: #234bbb;
+    border-radius: 30px;
+    padding: 13px 43px;
+    margin-left: 11px;
+}
+
+.footer-top-content-dangkyTV .form-dangkyEmail .button-dangkyTV:hover {
+    background-color: #08173f;
+}
+
+.footer-top-content-dangkyTV .form-dangkyEmail .button-dangkyTV a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-top-content-cotThongTin {
+    display: flex;
+}
+
+.footer-top-block-item {
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 315px;
+}
+
+.footer-block-mobile {
+    text-align: left;
+}
+
+.footer-block-mobile h2 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #051c42;
+}
+
+.footer-block-list ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-block-list li {
+    margin: 15px 0;
+}
+
+.footer-block-list li a {
+    text-decoration: none;
+    color: #051c42;
+    font-weight: 400;
+}
+
+.social-item ul {
+    display: flex;
+}
+
+.social-item ul {
+    font-size: 35px;
+}
+
+.social-item ul li {
+    margin-right: 20px;
+}

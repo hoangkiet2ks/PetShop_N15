@@ -1,0 +1,15 @@
+.footer-block-bottom {
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.footer-block-bottom .footer-copyright {
+    flex-basis: 40%;
+}
+
+.footer-block-bottom .logochungnhan img {
+    width: 183px;
+    margin-right: 56px;
+}

@@ -1,0 +1,46 @@
+.block-header-content {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title .text {
+    color: #3c3c3c;
+    font-weight: 700;
+    margin-bottom: 30px !important;
+    font-size: 20px;
+}
+
+.view_all {
+    color: #3c3c3c;
+    font-weight: 400;
+    margin-bottom: 30px !important;
+}
+
+.block-brand {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+}
+
+
+/* Tablet lớn và nhỏ */
+@media (max-width: 1024px) {
+    .block-brand {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Mobile lớn */
+@media (max-width: 768px) {
+    .block-brand {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile nhỏ */
+@media (max-width: 480px) {
+    .block-brand {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,38 @@
+.separator {
+    border: none;
+    border-top: 2px solid #051c42;
+    /* Màu và độ dày của đường kẻ */
+    width: 50%;
+    /* Độ rộng của đường kẻ */
+    margin: 20px auto;
+    /* Căn giữa theo chiều ngang và đặt khoảng cách trên và dưới */
+}
+
+.buydirectly {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.buydirectly hr {
+    background-color: #234bbb;
+    width: 1359px;
+    /* Độ rộng của đường kẻ */
+    margin: 0 auto;
+    color: #234bbb;
+}
+
+.buydirectly h3 {
+    display: block;
+    position: absolute;
+    top: -15px;
+    background-color: #fff;
+    color: #234bbb;
+    width: 500px;
+    /* chiều rộng của khối con */
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    left: calc(50% - 250px);
+    /* 50% của khối relative - đi 1 nửa chiều rộng của khối con để căn giữa */
+}

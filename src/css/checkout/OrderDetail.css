@@ -1,0 +1,172 @@
+.order-detail-container {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Bóng nhẹ */
+  font-family: "Inter", sans-serif; /* Font hiện đại */
+}
+
+.order-detail-container h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1a202c; /* Xám đậm tinh tế */
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.order-detail-container h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a202c;
+  margin: 32px 0 16px;
+}
+
+/* Thông tin đơn hàng */
+.order-info {
+  background-color: #f7fafc; /* Nhạt hơn */
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.order-info p {
+  font-size: 16px;
+  color: #2d3748; /* Xám đậm */
+  margin-bottom: 12px;
+}
+
+.order-info p strong {
+  font-weight: 600;
+  color: #1a202c;
+}
+
+/* Wrapper cho bảng */
+.order-table-wrapper {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.order-table th,
+.order-table td {
+  padding: 16px 24px;
+  text-align: left;
+  font-size: 15px;
+  color: #2d3748;
+}
+
+.order-table th {
+  background-color: #4a5568; /* Xám đậm */
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.order-table td {
+  border-bottom: 1px solid #edf2f7; /* Viền nhạt */
+  transition: background-color 0.3s ease;
+}
+
+.order-table tr:hover td {
+  background-color: #f7fafc; /* Nhạt khi hover */
+}
+
+/* Tổng hợp đơn hàng */
+.order-summary {
+  margin-top: 32px;
+  padding: 24px;
+  background-color: #f7fafc;
+  border-radius: 8px;
+}
+
+.order-summary p {
+  font-size: 16px;
+  color: #2d3748;
+  margin-bottom: 12px;
+}
+
+.order-summary p strong {
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.order-summary .final-total {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2b6cb0; /* Xanh để nhấn mạnh */
+  margin-top: 16px;
+}
+
+/* Nút quay lại */
+.back-button {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 12px 24px;
+  background-color: #2b6cb0; /* Xanh */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #1a4971; /* Xanh đậm */
+}
+
+/* Loading state */
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #718096;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 100px auto;
+  max-width: 1200px;
+}
+
+/* Trạng thái rỗng */
+.no-order {
+  text-align: center;
+  font-size: 18px;
+  color: #718096;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 100px auto;
+  max-width: 1200px;
+}
+
+.no-order p {
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #2b6cb0;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #1a4971;
+}
+

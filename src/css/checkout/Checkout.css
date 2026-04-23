@@ -1,0 +1,107 @@
+.error {
+  color: red;
+  font-size: 13px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.checkout-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.checkout-left, .checkout-right {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-left {
+  width: 60%;
+}
+
+.checkout-right {
+  width: 35%;
+}
+
+/* Tiêu đề */
+h2, h3, h4 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+label {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.delivery-method label,
+.payment-method label,
+.checkout-delivery-title label {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* .delivery-method label:hover,
+.payment-method label:hover,
+.checkout-delivery-title label:hover {
+  background: #F0F5FF;
+  border: 1px solid #1773B0;
+} */
+
+/* Nút hoàn tất đơn hàng */
+.checkout-button {
+  width: 100%;
+  padding: 14px;
+  background: #227dba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.checkout-button:hover {
+  background: #105989;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+  vertical-align: middle; /* Giúp radio button căn giữa với nội dung */
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Khi được chọn */
+label.selected {
+  border: 2px solid #1773B0;
+  background-color: #F0F5FF;
+  transition: 0.1s;
+}
+
+input:focus,
+select:focus {
+  border: 1px solid #1773B0 !important; /* Tăng độ dày border để dễ thấy */
+  outline: none !important;
+}
+

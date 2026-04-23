@@ -1,0 +1,45 @@
+.phoneNumber-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.checkout-delivery-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Tạo khoảng cách giữa các input */
+  margin-bottom: 8px;
+}
+
+.checkout-delivery-details input,
+.checkout-delivery-details select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.checkout-contact {
+  display: flex;
+  gap: 12px;
+}
+
+.checkout-contact .checkout-email,
+.checkout-contact .checkout-phone {
+  width: 100%;
+}
+
+.checkout-location {
+  display: flex;
+  gap: 12px;
+}
+
+.checkout-location select {
+  flex: 1; /* Chia đều khoảng trống giữa các select */
+}
+
+

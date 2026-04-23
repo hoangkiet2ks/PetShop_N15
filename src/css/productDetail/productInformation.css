@@ -1,0 +1,238 @@
+.container {
+  align-items: center;
+}
+
+.breadcrumb {
+  width: 100%;
+  padding-left: 0 !important ;
+  margin-left: 0 !important;
+}
+.breadcrumb ol,
+ul {
+  padding-left: 0;
+}
+.breadcrumb ul li {
+  display: inline;
+  padding-left: 0;
+  padding-right: 20px;
+  text-decoration: none;
+  color: #777;
+  font: caption;
+  font-size: 18px;
+  a {
+    text-decoration: none;
+    color: #777;
+  }
+  a:hover {
+    color: #464646;
+  }
+}
+
+.product-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-name p {
+  color: #052d9d;
+}
+
+.brand-name {
+  display: flex;
+  justify-content: start;
+  font-size: 19px;
+}
+
+.brand {
+  padding-right: 10px;
+}
+
+.price {
+  width: 100%;
+  padding-left: 0 !important ;
+  margin-left: 0 !important;
+}
+
+.price ul li {
+  display: inline;
+  padding-left: 0;
+  padding-right: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: black;
+}
+
+.new-price {
+  color: #f00;
+}
+
+/* Phần chọn size */
+.size {
+  margin-top: 15px;
+}
+
+.size-title {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.size-options {
+  display: flex;
+  gap: 8px;
+}
+
+.size-btn {
+  position: relative;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  /* transition: 0.2s; */
+}
+
+.size-btn.selected {
+  border: 2px solid black;
+}
+
+.size-btn.disabled {
+  color: gray;
+  cursor: not-allowed;
+  position: relative;
+  border: 1px solid #ddd;
+  background: #f8f8f8;
+  transition: 0.2s;
+  overflow: hidden; /* Chặn phần gạch đỏ bị tràn */
+}
+
+.size-btn.disabled .strikethrough {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: red;
+  top: 50%;
+  left: 0;
+}
+
+.amount {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.amount p {
+  font-weight: bold;
+  margin: 0;
+}
+
+.quantity-btn {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.quantity-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.total-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.total-price strong {
+  font-size: 18px;
+}
+
+.total-price p {
+  color: black;
+}
+
+.add-to-cart-btn {
+  background-color: #0058ff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  text-align: center;
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0046cc;
+}
+
+.shipping-information {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.shipping-information p {
+  margin: 5px 0;
+}
+
+.shipping-information strong {
+  display: flex;
+  align-items: center;
+}
+
+.shipping-information strong::before {
+  content: "🚚";
+  margin-right: 5px;
+}
+
+.flavor-options, .size-options, .type-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.flavor-btn, .size-btn, .type-btn {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.flavor-btn.selected, .size-btn.selected, .type-btn.selected {
+  border: 1px solid black;
+}
+
+.flavor-btn.disabled, .size-btn.disabled, .type-btn.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  position: relative;
+}
+
+.type {
+  margin-top: 10px;
+}
+
+.type-title {
+  margin-bottom: 5px;
+}
+
+
+
+

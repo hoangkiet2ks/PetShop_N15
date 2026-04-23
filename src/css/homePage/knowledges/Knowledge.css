@@ -1,0 +1,45 @@
+.card {
+    width: 100%;
+    border: none !important;
+    height: 100%;
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    /* Số dòng muốn hiển thị */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+    /* Chiều cao dòng */
+    max-height: calc(1.5em * 3);
+    /* line-height x số dòng */
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image img:hover {
+    width: 100%;
+    transform: scale(1.1, 1.1);
+}
+
+.image img {
+    transition: all 0.5s ease-in-out;
+}
+
+.image:hover .addCart-box {
+    display: block;
+}
+
+.card-body a {
+    color: #051c42;
+}
+
+.card-body h5 {
+    color: #234bbb;
+}
